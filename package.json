@@ -1,0 +1,11 @@
+{
+  "name": "plants",
+  "version": "1.0.0",
+  "description": "study project for RSSchool <3",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
