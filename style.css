@@ -15,6 +15,7 @@ ul {
 }
 
 .button {
+  display: block;
   padding: 12px 30px;
   font-family: "Inika", serif;
   color: #E06733;
@@ -69,6 +70,107 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+  min-height: 560px;
+  padding-top: 38px;
+}
+
+.prices__left-column .prices__title {
+  margin: 0;
+  margin-bottom: 60px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+.prices__left-column .prices__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 34px 41px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+
+.price-card {
+  box-sizing: border-box;
+  width: 250px;
+  padding: 16px 40px;
+  background-color: #EDF2EC;
+  border-radius: 20px;
+}
+.price-card .price-card__header {
+  display: flex;
+  justify-content: space-between;
+}
+.price-card .price-card__title {
+  margin: 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.price-card__toggle {
+  position: relative;
+}
+.price-card__toggle span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+.price-card__toggle span::before, .price-card__toggle span::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 4.5px;
+  position: absolute;
+  top: 9px;
+  background-color: #717171;
+  border-radius: 0.5px;
+}
+.price-card__toggle span::before {
+  right: 8.5px;
+  transform: rotate(45deg);
+}
+.price-card__toggle span::after {
+  right: 6px;
+  transform: rotate(135deg);
+}
+
+.prices__right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  max-width: 460px;
+  background-image: url("assets/images/bg-leafs-small.png");
+  background-position: right 210px;
+  background-repeat: no-repeat;
+}
+.prices__right-column p {
+  margin: 0;
+  margin-bottom: 38px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  text-align: right;
+}
+.prices__right-column p b {
+  color: #499A18;
+}
+.prices__right-column .prices__button {
+  max-width: 150px;
+  padding: 12px 30px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .service {

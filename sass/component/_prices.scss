@@ -1,0 +1,131 @@
+.prices {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 560px;
+
+  padding-top: 38px;
+
+}
+
+.prices__left-column {
+  .prices__title {
+    margin: 0;
+    margin-bottom: 60px;
+    
+    @include font-style($size: 40px, $height: 48px, $weight: 700, $color: $color-black);
+  }
+
+  .prices__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+
+    padding: 34px 41px;
+
+    border: 1px solid $color-border;
+    border-radius: 20px;
+  }
+}
+
+.price-card {
+  box-sizing: border-box;
+
+  width: 250px;
+
+  padding: 16px 40px;
+
+  background-color: $color-bg;
+  border-radius: 20px;
+
+  .price-card__header {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  .price-card__title {
+    margin: 0;
+
+    @include font-style($weight: 700, $color: $color-black);
+  }
+
+
+}
+
+.price-card__toggle {
+  position: relative;
+
+  span {
+    display: block;
+
+    width: 19px;
+    height: 19px;
+
+    background-color: $color-toggle;
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      content: "";
+
+      display: block;
+      height: 1px;
+      width: 4.5px;
+  
+      position: absolute;
+      top: 9px;
+
+      background-color: $color-text-additional;
+      border-radius: 0.5px;
+    }
+  
+    &::before {
+      right: 8.5px;
+
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: 6px;
+
+      transform: rotate(135deg);
+    }
+  }
+
+  
+}
+
+.prices__right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  box-sizing: border-box;
+
+  max-width: 460px;
+
+  background-image: url("assets/images/bg-leafs-small.png");
+  background-position: right 210px;
+  background-repeat: no-repeat;
+
+  p {
+    margin: 0;
+    margin-bottom: 38px;
+    
+    @include font-style($size: 40px, $height: 125%, $weight: 700, $color: $color-black);
+    text-align: right;
+
+    b {
+      color: $color-main;
+    }
+  }
+
+  .prices__button {
+    max-width: 150px;
+    padding: 12px 30px;
+
+    font-weight: 700;
+    text-align: center;
+  }
+}
