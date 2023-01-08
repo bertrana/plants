@@ -5,6 +5,7 @@
   @include font-style($height: 26px, $color: $color-additional);
   text-decoration: none;
 
+  background-color: transparent;
   border: 1px solid $color-additional;
   border-radius: 5px;
 }

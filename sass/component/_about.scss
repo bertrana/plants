@@ -1,0 +1,35 @@
+.about {
+  padding-top: 160px;
+  padding-bottom: 156px;
+
+  &.container {
+    background-image: url("assets/images/bg-houseplant.png");
+    background-repeat: no-repeat;
+    background-position: 90% 93px;
+  }
+
+  .about__wrapper {
+    max-width: 610px;
+
+    margin-right: auto;
+  }
+
+  .about__header {
+    max-width: 470px;
+
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-family: 'Inika', serif;
+    @include font-style($size: 40px, $height: 52px, $color: $color-main);
+
+    strong {
+      color: $color-additional;
+      font-weight: 400;
+    }
+  }
+
+  .about__text {
+    @include font-style($height: 30px);
+  }
+}

@@ -22,6 +22,7 @@ ul {
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
+  background-color: transparent;
   border: 1px solid #E06733;
   border-radius: 5px;
 }
@@ -34,6 +35,40 @@ ul {
   position: absolute;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.about {
+  padding-top: 160px;
+  padding-bottom: 156px;
+}
+.about.container {
+  background-image: url("assets/images/bg-houseplant.png");
+  background-repeat: no-repeat;
+  background-position: 90% 93px;
+}
+.about .about__wrapper {
+  max-width: 610px;
+  margin-right: auto;
+}
+.about .about__header {
+  max-width: 470px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Inika", serif;
+  color: #499A18;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+.about .about__header strong {
+  color: #E06733;
+  font-weight: 400;
+}
+.about .about__text {
+  color: #636060;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .welcome {
@@ -81,7 +116,8 @@ ul {
   max-width: 1440px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 109px;
+  padding-left: 109px;
+  padding-right: 109px;
 }
 
 header {
