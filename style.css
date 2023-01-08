@@ -1,4 +1,4 @@
-html {
+body {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: #636060;
@@ -26,7 +26,58 @@ ul {
 
 .container {
   max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
   padding: 0 109px;
+}
+
+header {
+  background-color: #EDF2EC;
+  font-family: "Inika", serif;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.header__logo {
+  position: relative;
+  padding-left: 23px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.header__logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  background-image: url("assets/icons/logo.png");
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 46px;
+}
+.header__nav .header__nav-link {
+  text-decoration: none;
+  color: #010201;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+}
+.header__nav .header__nav-link--current {
+  color: #E06733;
+  font-weight: 700;
+}
+.header__nav .header__nav-link:hover, .header__nav .header__nav-link:focus {
+  color: #499A18;
 }
 
 /*# sourceMappingURL=style.css.map */

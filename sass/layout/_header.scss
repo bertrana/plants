@@ -1,0 +1,59 @@
+header {
+  background-color: $color-bg;
+
+  font-family: 'Inika', serif;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.header__logo {
+  position: relative;
+
+  padding-left: 23px;
+
+  @include font-style($size: 16px, $height: 21px, $color: $color-black);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background: transparent;
+    background-image: url("assets/icons/logo.png");
+  }
+}
+
+.header__nav {
+  ul {
+    display: flex;
+    gap: 46px;
+  }
+
+  .header__nav-link {
+    text-decoration: none;
+
+    @include font-style($size: 16px, $height: 50px, $color: $color-nav);
+
+    &--current {
+      color: $color-additional;
+      font-weight: 700;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-main;
+    }
+  }
+  
+}
