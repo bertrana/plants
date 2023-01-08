@@ -1,0 +1,16 @@
+@import "abstracts/constant";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/visually-hidden";
+
+@import "component/about";
+@import "component/contacts";
+@import "component/prices";
+@import "component/service";
+@import "component/welcome";
+
+@import "layout/container";
+@import "layout/footer";
+@import "layout/header";
+

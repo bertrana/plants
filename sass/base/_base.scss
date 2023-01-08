@@ -1,0 +1,15 @@
+html {
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+  @include font-style;
+
+  background-color: $color-white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}

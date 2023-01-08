@@ -1,3 +1,32 @@
+html {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #636060;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #ffffff;
+}
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 109px;
+}
 
 /*# sourceMappingURL=style.css.map */
