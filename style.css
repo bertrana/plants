@@ -14,6 +14,18 @@ ul {
   list-style: none;
 }
 
+.button {
+  padding: 12px 30px;
+  font-family: "Inika", serif;
+  color: #E06733;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -22,6 +34,47 @@ ul {
   position: absolute;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.welcome {
+  background-color: #EDF2EC;
+}
+.welcome .container {
+  padding-top: 98px;
+  padding-bottom: 94px;
+  background-image: url("assets/images/bg-leafs.png");
+  background-repeat: no-repeat;
+  background-position: 109px center;
+}
+.welcome .welcome__wrapper {
+  margin-left: auto;
+  max-width: 550px;
+}
+.welcome .welcome__header {
+  margin: 0;
+  margin-bottom: 42px;
+  color: #717171;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+}
+.welcome .welcome__header b {
+  color: #499A18;
+}
+.welcome .welcome__text {
+  margin-bottom: 48px;
+  color: #636060;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+}
+.welcome .welcome__button {
+  padding: 14px 27px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-width: 2px;
 }
 
 .container {

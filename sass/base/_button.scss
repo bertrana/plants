@@ -1,0 +1,10 @@
+.button {
+  padding: 12px 30px;
+
+  font-family: 'Inika', serif;
+  @include font-style($height: 26px, $color: $color-additional);
+  text-decoration: none;
+
+  border: 1px solid $color-additional;
+  border-radius: 5px;
+}

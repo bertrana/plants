@@ -1,0 +1,45 @@
+.welcome {
+  background-color: $color-bg;
+
+  .container {
+    padding-top: 98px;
+    padding-bottom: 94px;
+
+    background-image: url("assets/images/bg-leafs.png");
+    background-repeat: no-repeat;
+    background-position: 109px center;
+  }
+
+  .welcome__wrapper {
+    margin-left: auto;
+    max-width: 550px;
+  }
+
+  .welcome__header {
+    margin: 0;
+    margin-bottom: 42px;
+
+    @include font-style($weight: 700, $size: 45px, $height: 50px, $color: $color-text-additional);
+
+    b {
+      color: $color-main;
+    }
+  }
+
+  .welcome__text {
+    margin-bottom: 48px;
+
+    @include font-style($height: 35px);
+  }
+
+  .welcome__button {
+    padding: 14px 27px;
+
+    font-family: 'Inter', sans-serif;
+    color: $color-black;
+    text-transform: uppercase;
+
+    border-radius: 10px;
+    border-width: 2px;
+  }
+}
